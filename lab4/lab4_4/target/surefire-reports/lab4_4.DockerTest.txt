@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: lab4_4.DockerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.369 s <<< FAILURE! - in lab4_4.DockerTest
+test{ChromeDriver}  Time elapsed: 1.353 s  <<< ERROR!
+org.junit.jupiter.api.extension.ParameterResolutionException: Failed to resolve parameter [org.openqa.selenium.chrome.ChromeDriver arg0] in method [public void lab4_4.DockerTest.test(org.openqa.selenium.chrome.ChromeDriver)]: There was an error creating WebDriver object for Chrome
+Caused by: io.github.bonigarcia.wdm.config.WebDriverManagerException: There was an error creating WebDriver object for Chrome
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: org.openqa.selenium.remote.http.ConnectionFailedException: 
+Unable to establish websocket connection to http://localhost:33429/devtools/browser/0259c092-a629-4d5a-920a-051e4f8af0a8
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.5.0-25-generic', java.version: '17.0.10'
+Driver info: driver.version: ChromeDriver
+
