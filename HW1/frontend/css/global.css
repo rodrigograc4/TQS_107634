@@ -1,0 +1,40 @@
+
+body,h1,h2,h3,h4,h5,h6{
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+.myLink {
+    display: none
+}
+
+.blurred {
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+}
+
+.transparent {
+    opacity: 0;
+}
+
+.table {
+    border-collapse: separate;
+    border-spacing: 0 10px;
+  }
+
+  
+.container {
+display: flex;
+}
+.container .left {
+flex: 1;
+}
+.container .right {
+flex: 1;
+overflow-wrap: break-word;
+}
+pre {
+font-size: 14px; /* Tamanho da fonte do pre */
+white-space: pre-wrap; /* Manter quebras de linha */
+}
