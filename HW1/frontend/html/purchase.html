@@ -15,7 +15,7 @@
 <body class="w3-light-grey">
   <!-- Navigation Bar -->
   <div class="w3-bar w3-black w3-xlarge" style="height: 90px; z-index: 9999; position: relative;">
-    <a href="#" class="w3-bar-item" style="margin-left: 2vw;">
+    <a href="index.html" class="w3-bar-item" style="margin-left: 2vw;">
         <img src="../images/logo2.png" style="width: 73px"/>
     </a>
   </div>
@@ -25,47 +25,22 @@
     <img class="w3-image" src="../images/bus.jpg" alt="Bus" style="width: 100%; height: 100vh; object-fit: cover;">
     <div class="w3-display-middle" style="width: 60%;">
       <div class="w3-bar" style="z-index: 9990; position: relative;">
-        <button class="w3-bar-item tablink w3-black blurred" onclick="openLink(event, 'Flight');">
+        <button class="w3-bar-item w3-black blurred">
           <i class="fa fa-bus w3-margin-right blurred" ></i>Bus Trip
         </button>
       </div>
 
       <!-- Tabs -->
-      <div id="Flight" class="w3-container w3-text-white blurred w3-padding-16 myLink">
-        <h3> Your Bus Ticket has been reserved!</h3>
+      <div id="Flight" class="w3-container w3-text-white blurred w3-padding-16">
+        <h3> Your Reservation is almost complete!</h3>
         <div class="w3-row-padding" style="margin: 0 -16px">
             <div class="w3-half" style="margin-top: 10px;">
-                <label>First Name</label>
-                <input id="firstname" class="w3-select w3-border" placeholder=" Your first name">
+                <label>Name</label>
+                <input id="name" class="w3-select w3-border" placeholder=" Your Name">
             </div>
             <div class="w3-half" style="margin-top: 10px;">
-                <label>Last Name</label>
-                <input id="lastname" class="w3-select w3-border" placeholder=" Your last name">
-            </div>
-            <div class="w3-half" style="margin-top: 10px;">
-                <label>Address</label>
-                <input id="address" class="w3-select w3-border" placeholder=" Your address">
-            </div>
-            <div class="w3-half" style="margin-top: 10px;">
-                <label>City</label>
-                <input id="city" class="w3-select w3-border" placeholder=" Your city">
-            </div>
-            <div class="w3-half" style="margin-top: 10px;">
-                <label>State</label>
-                <input id="state" class="w3-select w3-border" placeholder=" Your state">
-            </div>
-            <div class="w3-half" style="margin-top: 10px;">
-                <label>Zip-Code</label>
-                <input id="zipcode" class="w3-select w3-border" placeholder=" Your zip-code">
-            </div>
-            <div class="w3-half" style="margin-top: 10px;">
-                <label>Credit-Card Type</label>
-                <select id="pickup" class="w3-select w3-border" style="height: 42.5px;">
-                    <option value="" disabled selected>Select your credit-card type</option>
-                    <option value="MasterCard">MasterCard</option>
-                    <option value="Visa">Visa</option>
-                    <option value="AmericanExpress">AmericanExpress</option>
-                </select>
+                <label>Email</label>
+                <input id="email" class="w3-select w3-border" placeholder=" Your Email">
             </div>
             <div class="w3-half" style="margin-top: 10px;">
                 <label>Credit-Card Number</label>
@@ -74,6 +49,10 @@
             <div class="w3-half" style="margin-top: 10px;">
                 <label>Credit-Card Month/Year</label>
                 <input id="ccardyear" class="w3-select w3-border" placeholder=" Your credit-card month/year">
+            </div>
+            <div class="w3-half" style="margin-top: 10px;">
+                <label>Credit-Card CVV</label>
+                <input id="ccardcvv" class="w3-select w3-border" placeholder=" Your credit-card cvv">
             </div>
             <div class="w3-half" style="margin-top: 10px;">
                 <label>Credit-Card Name</label>
@@ -92,7 +71,9 @@
     </div>
   </header>
   
-  <script src="../js/script.js"></script>
+  
+  <script src="../js/purchase.js"> </script>
+
 </body>
 
 </html>
